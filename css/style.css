@@ -243,7 +243,7 @@ main .patata--perks {
     margin: 60px 15px 20px 15px;
 }
 
-.section--patata p{
+.section--patata p {
     text-align: center;
 }
 
@@ -258,6 +258,7 @@ main .batata--ventajas {
     margin: 20px auto;
     display: grid;
     grid-template-columns: 1 288px;
+    justify-content: center;
 }
 
 .batata-contain {
@@ -265,11 +266,12 @@ main .batata--ventajas {
     height: 160px;
     background-color: #282623;
     margin: 8px 0;
+    padding: 0 8px;
     border-radius: 8px;
     position: relative;
 }
 
-.batata--time span{
+.batata--time span {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -277,10 +279,10 @@ main .batata--ventajas {
     background-image: url('../assets/icons/clock.svg');
     background-repeat: no-repeat;
     right: calc(100% - 40px);
-    top: calc(15px);   
+    top: calc(15px);
 }
 
-.batata--eye span{
+.batata--eye span {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -288,10 +290,10 @@ main .batata--ventajas {
     background-image: url('../assets/icons/eye.svg');
     background-repeat: no-repeat;
     right: calc(100% - 40px);
-    top: calc(15px);   
+    top: calc(15px);
 }
 
-.batata--money span{
+.batata--money span {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -299,10 +301,10 @@ main .batata--ventajas {
     background-image: url('../assets/icons/dollar-sign.svg');
     background-repeat: no-repeat;
     right: calc(100% - 40px);
-    top: calc(15px);   
+    top: calc(15px);
 }
 
-.batata--info span{
+.batata--info span {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -310,10 +312,10 @@ main .batata--ventajas {
     background-image: url('../assets/icons/check-circle.svg');
     background-repeat: no-repeat;
     right: calc(100% - 40px);
-    top: calc(15px);   
+    top: calc(15px);
 }
 
-.batata--description h3{
+.batata--description h3 {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--just-white);
@@ -322,10 +324,134 @@ main .batata--ventajas {
 
 }
 
-.batata--description p{
+.batata--description p {
     font-size: 1.4rem;
     line-height: 18px;
     margin-left: 10px;
     margin-top: 6px;
 
+}
+
+
+.girl-img--background {
+    width: 100%;
+    min-width: 310px;
+    height: 70vh;
+    background-image: url('../assets/img/bitcoinbaby2x.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center
+}
+
+.girl-img--background h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--just-white);
+    padding-top: 40px;
+}
+
+main .pagos--batatabit {
+    width: 100%;
+    text-align: center;
+}
+
+main .info-pagos {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.info-pagos h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 26px;
+    color: var(--black);
+}
+
+.info-pagos p {
+    font-size: 1.4rem;
+    line-height: 18px;
+    color: var(--gris-fuerte);
+    margin: 35px 15px;
+}
+
+.pagos--batatabit .suscripciones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagos {
+    width: 70%px;
+    height: 250px;
+    min-width: 230px;
+    max-width: 300px;
+    /* Just White */
+    background: #FFFFFF;
+    /* Sombra /Blanco */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 8px;
+    position: relative;
+}
+
+.pagos .pago--recomendado {
+    width: 100px;
+    height: 30px;
+    background-color: #F7931A;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--just-white);
+    position: absolute;
+    bottom: calc(100% - 15px);
+    left: calc(50% - 50px);
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.pagos h3 {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    line-height: 18px;
+    color: var(--black);
+}
+
+.pagos .precio--plans {
+    padding-top: 10px;
+    font-size: 5.2rem;
+    line-height: 6rem;
+    font-weight: 700;
+    color: var(--black);
+
+}
+
+.pagos .precio--plans span {
+    font-size: 1.2rem;
+    vertical-align: text-top;
+    color: var(--black);
+}
+
+.pagos .description--pago {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--gris-fuerte);
+    padding: 20px 10px;
+}
+
+.pagos .comprar--plan {
+    width: 150px;
+    height: 50px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    /* Off White */
+    background: #FAF8F7;
+    /* Bitcoin Orange */
+    border: 2px solid #F7931A;
+    border-radius: 4px;
+}
+
+.pagos .comprar--plan span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url('../assets/icons/orange-right-arrow.svg');
 }
