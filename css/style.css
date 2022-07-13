@@ -8,6 +8,8 @@
     --just-white: #FFFFFF;
     --of-white: #FAF8F7;
     --black: #201E1C;
+    --gris-fuerte: #757575;
+    --gris-claro: #B5B0AC;
 }
 
 html {
@@ -72,10 +74,258 @@ header .header-title-container .header--button {
     color: var(--black);
 }
 
-.header--button span{
+.header--button span {
     display: inline-block;
     width: 13px;
     height: 8px;
     margin-left: 10px;
     background-image: url('../assets/icons/down-arrow.svg');
+}
+
+main .main-bitcoin--background {
+    width: 70%;
+    max-width: 500px;
+    min-width: 260px;
+    margin: 40px auto;
+}
+
+main .main-bitcoin--background img {
+    width: 100%;
+}
+
+main .main-h2--panes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .main-h2--panes h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    margin: 20px 15px;
+    color: var(--black);
+
+}
+
+main .main-h2--panes p {
+    font-size: 1.4rem;
+    line-height: 20px;
+    color: var(--gris-fuerte);
+    margin: 0 15px;
+    text-align: center;
+}
+
+main .main-table--monedas,
+.main-table--comisiones {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(5, 40px);
+    justify-content: center;
+    gap: 2px;
+
+}
+
+
+.table-precio--bitcoin span {
+    width: 13px;
+    height: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    background-image: url('../assets/icons/trending-down.svg');
+}
+
+.table-precio--ethereum span {
+    width: 13px;
+    height: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    background-image: url('../assets/icons/trending-up.svg');
+}
+
+.table-precio--ripple span {
+    width: 13px;
+    height: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    background-image: url('../assets/icons/trending-down.svg');
+}
+
+.table-precio--estellar span {
+    width: 13px;
+    height: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    background-image: url('../assets/icons/trending-down.svg');
+}
+
+.main-table--monedas .table--monedas {
+    grid-area: 1/1/2/3;
+    color: #FF9536;
+    font-size: 2rem;
+    line-height: 25px;
+    font-weight: 700;
+    background-color: var(--just-white);
+    text-align: center;
+}
+
+.table--1,
+.table--2 p {
+    font-size: 1.4rem;
+    color: var(--gris-claro);
+    background-color: var(--just-white);
+    text-align: center;
+}
+
+.table--actualizacion {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.table--actualizacion p {
+    display: inline-block;
+    color: var(--black);
+    width: 260px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    background-color: #FFE9D4;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.main-table--comisiones .title--comisiones {
+    grid-area: 1/1/2/3;
+    color: #1A9AF7;
+    font-size: 2rem;
+    line-height: 25px;
+    font-weight: 700;
+    background-color: var(--just-white);
+    text-align: center;
+}
+
+.table-actualizacion--comisiones p {
+    background-color: #E7F5FF;
+}
+
+
+main .patata--perks {
+    width: 100%;
+    position: relative;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.section--patata span {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    display: inline-block;
+    background-image: url(../assets/icons/batata.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: calc(100% - 20px);
+    left: calc(50% - 20px);
+}
+
+.patata--perks h2 {
+    font-size: 2.4rem;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--just-white);
+    margin: 60px 15px 20px 15px;
+}
+
+.section--patata p{
+    text-align: center;
+}
+
+.patata--perks p {
+    font-size: 1.4rem;
+    line-height: 18px;
+    color: var(--gris-claro);
+}
+
+main .batata--ventajas {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1 288px;
+}
+
+.batata-contain {
+    width: 288px;
+    height: 160px;
+    background-color: #282623;
+    margin: 8px 0;
+    border-radius: 8px;
+    position: relative;
+}
+
+.batata--time span{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+    background-image: url('../assets/icons/clock.svg');
+    background-repeat: no-repeat;
+    right: calc(100% - 40px);
+    top: calc(15px);   
+}
+
+.batata--eye span{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+    background-image: url('../assets/icons/eye.svg');
+    background-repeat: no-repeat;
+    right: calc(100% - 40px);
+    top: calc(15px);   
+}
+
+.batata--money span{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+    background-image: url('../assets/icons/dollar-sign.svg');
+    background-repeat: no-repeat;
+    right: calc(100% - 40px);
+    top: calc(15px);   
+}
+
+.batata--info span{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+    background-image: url('../assets/icons/check-circle.svg');
+    background-repeat: no-repeat;
+    right: calc(100% - 40px);
+    top: calc(15px);   
+}
+
+.batata--description h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--just-white);
+    margin-top: 48px;
+    margin-left: 10px;
+
+}
+
+.batata--description p{
+    font-size: 1.4rem;
+    line-height: 18px;
+    margin-left: 10px;
+    margin-top: 6px;
+
 }
