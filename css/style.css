@@ -266,11 +266,12 @@ main .batata--ventajas {
     margin: 20px auto;
     display: grid;
     grid-template-columns: repeat(1, 288px);
+    grid-template-rows: repeat(4, 168px);
     justify-content: center;
 }
 
 .batata-contain {
-    width: 288px;
+    width: 100%;
     height: 160px;
     background-color: #282623;
     margin: 8px 0;
@@ -501,4 +502,12 @@ footer {
     line-height: 1.8rem;
     color: var(--just-white);
     text-decoration: none;
+}
+
+.footer--img{
+    width: 100px;
+}
+
+.footer--img img{
+    width: 100%;
 }
