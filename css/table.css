@@ -1,0 +1,3 @@
+main .batata--ventajas{
+    grid-template-columns: repeat(2, 288px);
+}
